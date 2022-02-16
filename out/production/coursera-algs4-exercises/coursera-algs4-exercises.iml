@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="CheckStyle-IDEA-Module">
+    <option name="configuration">
+      <map />
+    </option>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/coursera_1.3_stacks_and_queues" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coursera_1.4_analysis_of_algo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coursera_2.1_elementary_sorts" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coursera_2.2_mergesort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/union-find" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coursera_2.3_quicksort" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name=".lift2" level="project" />
+    <orderEntry type="library" name=".lift1" level="project" />
+    <orderEntry type="library" name=".lift3" level="project" />
+    <orderEntry type="library" name=".lift4" level="project" />
+    <orderEntry type="library" name=".lift" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/coursera_2.3_quicksort/.lift/algs4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/coursera_2.3_quicksort/.lift/algs4.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>

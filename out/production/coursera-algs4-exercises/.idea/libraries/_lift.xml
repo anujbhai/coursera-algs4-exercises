@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name=".lift">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/coursera_1.4_analysis_of_algo/.lift/checkstyle-lift.jar!/" />
+      <root url="jar://$PROJECT_DIR$/coursera_1.4_analysis_of_algo/.lift/algs4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

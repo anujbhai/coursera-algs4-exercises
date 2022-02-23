@@ -65,7 +65,7 @@ public class CollisionSystem {
 
             if (a != null && b != null) a.bounceOff(b);
             else if (a != null && b == null) a.bounceOffVerticalWall();
-            else if (a == null && b != null) a.bounceOffHorizontalWall();
+            else if (a == null && b != null) b.bounceOffHorizontalWall();
             else if (a == null && b == null) redraw(limit);
 
             predict(a, limit);
@@ -84,7 +84,10 @@ public class CollisionSystem {
             this.b = b;
 
             if (a != null) countA = a.count();
-            else if (b != null) countB = a.count();
+            else countA = -1;
+
+            if (b != null) countB = b.count();
+            else countB = -1;
         }
 
         public int compareTo(Event that) {
@@ -92,6 +95,9 @@ public class CollisionSystem {
         }
 
         public boolean isValid() {
+            if (a != null && a.count() != countA) return false;
+            if (b != null && b.count() != countB) return false;
+
             return true;
         }
     }

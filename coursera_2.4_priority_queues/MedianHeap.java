@@ -73,9 +73,9 @@ public class MedianHeap {
     }
 
     public static void main(String[] args) {
-        MedianHeap mh = new MedianHeap(10);
+        MedianHeap mh = new MedianHeap(100);
 
-        for (int i = 1; i <= 10; i++) {
+        for (int i = 1; i <= 100; i++) {
             mh.insert(i);
         }
         StdOut.println("Median: " + mh.findMedian());

@@ -69,15 +69,19 @@ public class RandomizedPQ {
     public static void main(String[] args) {
         int n = Integer.parseInt(args[0]);
         RandomizedPQ rndm = new RandomizedPQ(n);
-
         for (int i = 1; i <= n; i++) {
             rndm.insert(i);
             StdOut.print(i + " ");
         }
 
         StdOut.println("Random: " + rndm.findSample());
-        StdOut.println();
-        
-        StdOut.println("Previous random deleted. New random: " + rndm.delSample());
+
+        RandomizedPQ rndm2 = new RandomizedPQ(n);
+        for (int i = 1; i <= n; i++) {
+            rndm2.insertForDel(i);
+            StdOut.print(i + " ");
+        }
+
+        StdOut.println("Previous random deleted. New random: " + rndm2.delSample());
     }
 }

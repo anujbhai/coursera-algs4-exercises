@@ -17,6 +17,7 @@
       <sourceFolder url="file://$MODULE_DIR$/coursera_2.3_quicksort" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/coursera_2.4_priority_queues" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/coursera_3.2_binary_search_trees" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coursera_3.3_balanced_search_trees" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

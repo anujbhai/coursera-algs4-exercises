@@ -96,15 +96,30 @@ public class RedBlackBST<Key extends Comparable<Key>, Value> {
     /***************************************************************************
      *  Red-black tree deletion.
      ***************************************************************************/
-    public void delete(Key key) {}
+    public void delete(Key key) {
+        if (key == null) throw new IllegalArgumentException();
+        if (!contains(key)) return;
+        if (!isRed(root.left) && !isRed(root.right)) root.color = RED;
+        root = delete(root, key);
+        if (!isEmpty()) root.color = BLACK;
+    }
     private Node delete(Node h, Key key) {
         if (key.compareTo(h.key) < 0) {
             if (!isRed(h.left) && !isRed(h.left.left)) h = moveRedLeft(h);
             h.left = delete(h.left, key);
         } else {
             if (isRed(h.left)) h = rotateRight(h);
-            if (key.compareTo(h.key) == 0 && (h.right == null))
+            if (key.compareTo(h.key) == 0 && (h.right == null)) return null;
+            if (!isRed(h.right) && !isRed(h.left)) h = moveRedRight(h);
+            if (key.compareTo(h.key) == 0) {
+                Node x = min(h.right);
+                h.key = x.key;
+                h.val = x.val;
+                h.right = deleteMin(h.right);
+            } else h.right = delete(h.right, key);
         }
+
+        return balance(h);
     }
 
     public void deleteMin() {}
